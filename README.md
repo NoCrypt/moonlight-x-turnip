@@ -4,6 +4,8 @@
 
 This fork aims to build upon the original Android client with some new features and some existing features, fixes and optimizations from [Artemis](https://github.com/ClassicOldSong/moonlight-android) and other developers.
 
+> **Note:** This fork of [Moonlight X](https://github.com/MoreOrLessSoftware/moonlight-android) adds support for loading a custom Turnip (Mesa freedreno) Vulkan driver through [libadrenotools](https://github.com/bylaws/libadrenotools) for PyroWave. See [Custom Turnip Vulkan driver](#9-custom-turnip-mesa-freedreno-vulkan-driver) below.
+
 ## New Features
 
 ### 1. Quick Launch Apps
