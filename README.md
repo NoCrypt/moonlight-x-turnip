@@ -66,6 +66,17 @@ Access quick actions and custom commands during streaming with a customizable ov
 - Tweaked the formatting and simplified labels
 - Added variance between incoming and rendered FPS (will show > 0% when the values differ by 1 or more FPS)
 
+### 9. Custom Turnip (Mesa freedreno) Vulkan driver
+
+This fork can load a custom Vulkan driver such as [Turnip](https://docs.mesa3d.org/android.html)
+through [libadrenotools](https://github.com/bylaws/libadrenotools) for PyroWave, which needs
+Vulkan 1.3 that the stock Qualcomm driver doesn't provide.
+
+Turnip only drives PyroWave; other codecs keep the system Vulkan driver, since the MediaCodec
+path imports the decoder's AHardwareBuffer, which Turnip rejects. Choose a driver `.so`, `.zip`,
+or `.adpkg` under **Settings → Advanced → Custom driver file**; it's copied into app-private
+storage and loaded on the next stream. arm64 devices on Android 10 and later.
+
 ## Screenshots
 
 <img width="2560" height="1600" alt="Screenshot_20260602-085353" src="https://github.com/user-attachments/assets/2da16b54-2685-4c06-a855-76a38de5255f" />
