@@ -89,7 +89,7 @@ storage and loaded on the next stream. arm64 devices on Android 10 and later.
 - Revised decode latency calculation (typically a few ms less than Moonlight reports)
 
 ## Downloads
-[Download APK from releases](https://github.com/MoreOrLessSoftware/moonlight-android/releases)
+[Download APK from releases](https://github.com/NoCrypt/moonlight-x-turnip/releases)
 
 ## Building
 * Install Android Studio and the Android NDK
